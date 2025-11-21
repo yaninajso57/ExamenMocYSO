@@ -1,3 +1,14 @@
+package com.examen.ExamenMocYSO.service;
+
+import com.examen.ExamenMocYSO.repository.ProductoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.examen.ExamenMocYSO.entity.Producto;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
 public class ProductoServiceImpl implements ProductoService {
 
     @Autowired
