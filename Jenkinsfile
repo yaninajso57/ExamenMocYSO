@@ -45,7 +45,7 @@ pipeline {
                 success {
                     bat 'echo "Se crea el directorio versiones con la última versión de la api"'
                     bat 'mkdir versiones'
-                    bat 'for %f in (target\\*%VERSION_BACK%.jar) do copy "%f" versiones\\'
+                    bat 'for %%f in (target\\*%VERSION_BACK%.jar) do copy "%%f" versiones\\'
                 }
             }
 
